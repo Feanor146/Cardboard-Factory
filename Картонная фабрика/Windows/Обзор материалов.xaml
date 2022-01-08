@@ -1,0 +1,25 @@
+﻿<Page x:Class="Картонная_фабрика.Windows.Обзор_материалов"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Картонная_фабрика.Windows"
+      mc:Ignorable="d" 
+      d:DesignHeight="1010" d:DesignWidth="1920"
+      Title="Обзор материалов">
+    <Page.Background>
+        <ImageBrush ImageSource="1.jpg"/>
+    </Page.Background>
+    <Grid>
+        <DataGrid FontSize="16" PreviewKeyDown="Материалы_PreviewKeyDown" Name="Товары" AutoGenerateColumns="True" Margin="0,200,700,380"/>
+        <Label FontWeight="Bold" FontSize="48" Foreground="GhostWhite" Content="Сортировать по:" HorizontalAlignment="Left" Margin="50,70,0,0" VerticalAlignment="Top"/>
+        <ComboBox IsReadOnly="True" Text="Название по возрастанию" FontSize="28" HorizontalAlignment="Left" Margin="500,90,0,0" VerticalAlignment="Top" Width="400" IsEditable="True">
+            <Button Click="Button_Click" Content="Название по возрастанию"></Button>
+            <Button Click="Button_Click_1" Content="Название по убыванию"></Button>
+            <Button Click="Button_Click_2" Content="Цена по возрастанию"></Button>
+            <Button Click="Button_Click_3" Content="Цена по убыванию"></Button>
+            <Button Click="Button_Click_4" Content="Количество по возрастанию"></Button>
+            <Button Click="Button_Click_5" Content="Количество по убыванию"></Button>
+        </ComboBox>
+    </Grid>
+</Page>

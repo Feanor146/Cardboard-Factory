@@ -1,0 +1,23 @@
+﻿<Window x:Class="Картонная_фабрика.Windows.Картонная_фабрика"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"        
+        mc:Ignorable="d"
+        Title="Картонная фабрика" Height="1080" Width="1920">
+    <Grid>
+        <Menu FontSize="24" Height="40" VerticalAlignment="Top">
+            <MenuItem Header="Обзор:">
+                <MenuItem Click="Click" Header="Материалы"/>
+                <MenuItem Click="Click" Header="Товары"/>
+            </MenuItem>
+            <MenuItem Header="Добавление:">
+                <MenuItem Click="Click1" Header="Материалы"/>
+                <MenuItem Click="Click1" Header="Товары"/>
+            </MenuItem>
+            <MenuItem Name="КАвторизация" Click="КАвторизация_Click" Header="Авторизация"/>
+            <MenuItem Name="КРегистрация" Click="КРегистрация_Click" Header="Регистрация"/>
+        </Menu>
+        <Frame NavigationUIVisibility="Hidden" Name="Frame" Margin="0,40,0,0" Width="1920" Height="1010" Source="/Windows/Обзор материалов.xaml"/>
+    </Grid>
+</Window>

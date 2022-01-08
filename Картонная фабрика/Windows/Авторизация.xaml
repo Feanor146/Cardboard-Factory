@@ -1,0 +1,21 @@
+﻿<Window x:Class="Картонная_фабрика.Windows.Авторизация"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Картонная_фабрика.Windows"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="1080" Width="1920">
+    <Window.Background>
+        <ImageBrush ImageSource="1.jpg"/> 
+    </Window.Background>
+    <Grid>
+        <Label HorizontalAlignment="Center" Foreground="GhostWhite" FontWeight="Bold" FontSize="64" Content="Авторизация" Margin="0,200,0,0" VerticalAlignment="Top"/>
+        <Label HorizontalAlignment="Left" Foreground="GhostWhite" FontWeight="Bold" FontSize="48" Content="Логин" Margin="300,400,0,0" VerticalAlignment="Top"/>
+        <Label HorizontalAlignment="Left" Foreground="GhostWhite" FontWeight="Bold" FontSize="48" Content="Пароль"  Margin="300,550,0,0" VerticalAlignment="Top"/>
+        <TextBox Name="Логин" FontSize="48" HorizontalAlignment="Center" Margin="0,410,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="500"/>
+        <PasswordBox Name="Пароль" FontSize="48" HorizontalAlignment="Center" Margin="0,560,0,0" VerticalAlignment="Top" Width="500"/>
+        <Button Name="КАвторизация" Click="КАвторизация_Click" FontWeight="Bold" Background="DarkSeaGreen" FontSize="48" Content="Авторизация" HorizontalAlignment="Center" Margin="0,710,0,0" VerticalAlignment="Top" Width="400"/>
+        <Button Name="КРегистрация" Click="КРегистрация_Click" FontWeight="Bold" Background="DarkSeaGreen" FontSize="48" Content="Регистрация" HorizontalAlignment="Center" Margin="0,850,0,0" VerticalAlignment="Top" Width="400"/>
+    </Grid>
+</Window>
